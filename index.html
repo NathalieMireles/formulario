@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+  <p style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQz3gxBu7HK0vGAu527h8SGOlXr_QZJN1zEg&usqp=CAU" width: 100%;
+    height: 200px>
+    <form action="procesar_formulario.php" method="post">
+		<label for="nombre">FULL NAME:<abbr title="required" aria-label="required">*</abbr></label>
+		<input type="text" id="nombre" name="nombre" placeholder="EXAMPLE: Lorena Torres" required>
+
+    <label for="nombre">USER NAME:<abbr title="required" aria-label="required">*</abbr></label>
+		<input type="username" id="username" name="username" placeholder="EXAMPLE:NATH12 " required>
+
+		<label for="correo">EMAIL:<abbr title="required" aria-label="required">*</abbr></label>
+		<input type="email" id="correo" name="correo" placeholder="EXAMPLE: UTM0000000@utma.edu.mx" required>
+
+		<label for="contraseña">PASSWORD:<abbr title="required" aria-label="required">*</abbr></label>
+		<input type="password" id="contraseña" name="contraseña" placeholder=" EXAMPLE:12345678" required>
+
+    <label for="contraseña">CONFIRM PASSWORD:<abbr title="required" aria-label="required">*</abbr></label>
+		<input type="password" id="contraseña" name="contraseña" placeholder="********" required>
+
+    <label for="correo">PHONE:<abbr title="required" aria-label="required">*</abbr></label>
+		<input type="telefono" id="telefono" name="telefono" placeholder="EXAMPLE: 449 000 00 00" required>
+
+        <label>
+          
+            <input type="checkbox" name="genero" value="MASCULINO">
+            MASCULINO
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="FEMALE">
+            FEMENINO
+          </label>
+          <label>
+            <input type="checkbox" name="genero" value="prefieronodecirlo">
+            PREFER NO TO SAY
+            
+          </label>
+
+          <br>
+		<input type="submit" value="Registrarse">
+	</form>
+
+</body>
+</html>
